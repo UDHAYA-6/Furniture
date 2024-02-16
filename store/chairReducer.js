@@ -8,7 +8,7 @@ const chairSlice = createSlice({
         ordered: false,
         star: 5.0,
         name: "Classic Oak Chair",
-        price: 1439.99,
+        price: 1439,
         img: "/chair/chair1.jpg",
         description: "Sturdy and timeless oak chair with a classic design.",
       },
@@ -17,7 +17,7 @@ const chairSlice = createSlice({
         ordered: false,
         star: 4.5,
         name: "Modern Teak Chair",
-        price: 1499.99,
+        price: 1499,
         img: "/chair/chair2.jpg",
         description: "Sleek and modern teak chair for contemporary interiors.",
       },
@@ -26,7 +26,7 @@ const chairSlice = createSlice({
         ordered: false,
         star: 2.5,
         name: "Rustic Pine Chair",
-        price: 1529.99,
+        price: 1529,
         img: "/chair/chair3.jpg",
         description:
           "Charming rustic pine chair with a touch of countryside flair.",
@@ -36,7 +36,7 @@ const chairSlice = createSlice({
         ordered: false,
         star: 3.0,
         name: "Elegant Walnut Chair",
-        price: 1279.99,
+        price: 1279,
         img: "/chair/chair4.jpg",
         description:
           "Elegantly crafted walnut chair for a touch of sophistication.",
@@ -46,7 +46,7 @@ const chairSlice = createSlice({
         ordered: false,
         star: 3.5,
         name: "Vintage Mahogany Chair",
-        price: 1549.99,
+        price: 1549,
         img: "/chair/chair5.jpg",
         description:
           "Vintage-style mahogany chair with ornate details for a classic look.",
@@ -56,7 +56,7 @@ const chairSlice = createSlice({
         ordered: false,
         star: 4.5,
         name: "Minimalist Birch Chair",
-        price: 1390.99,
+        price: 1390,
         img: "/chair/chair6.jpg",
         description:
           "Simple and minimalist birch chair for a clean and modern aesthetic.",

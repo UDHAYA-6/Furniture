@@ -82,7 +82,7 @@ const cart = () => {
         )}
         {data.length == 0 && (
           <center>
-            <img src="/cart1.jpg" height={350} />
+            <img src="/cart1.png" height={350} />
             <h1 style={{ margin: "0%" }}>Your cart is empty</h1>
           </center>
         )}
@@ -114,10 +114,11 @@ const cart = () => {
         ))}
         {data.length > 0 && (
           <Button
+            size="large"
             color="warning"
             variant="contained"
-            className={classes.btn}
             onClick={OrderProcess}
+            style={{ marginLeft: "43rem" }}
           >
             Pay {price}
           </Button>

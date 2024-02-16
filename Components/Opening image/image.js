@@ -1,11 +1,31 @@
 import React from "react";
+import { motion } from "framer-motion";
+
 import classes from "./image.module.css";
 const Image = () => {
   return (
     <>
-      <div className={classes.container}>
-        <img src="/bg.jpg" height={600} className={classes.img} />
-        <div className={classes.div}>
+      <motion.div
+        className={classes.container}
+        transition={{ duration: 1, type: "tween", bounce: 1 }}
+        initial={{ opacity: 0.6, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+      >
+        <motion.img
+          initial={{ opacity: 0.7, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+          src="/bg.jpg"
+          height={600}
+          className={classes.img}
+        />
+        <motion.div
+          initial={{ opacity: 0.5, x: 150 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+          className={classes.div}
+        >
           <h1> Velvet Visions Furnitures</h1>
           <p> Where Comfort Meets Style! </p>
           <p>
@@ -13,9 +33,15 @@ const Image = () => {
             collection of handcrafted furniture. Explore our latest arrivals and
             find exclusive deals to elevate your home décor.
           </p>
-        </div>
-      </div>
-      <div className={classes.container2}>
+        </motion.div>
+      </motion.div>
+      <motion.div
+        className={classes.container2}
+        transition={{ duration: 1, type: "tween", bounce: 1 }}
+        initial={{ opacity: 0, y: 200 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+      >
         <div className={classes.box1}>
           <h2>About us</h2>
           <p>
@@ -28,9 +54,9 @@ const Image = () => {
           </p>
         </div>
         <div className={classes.box2}>
-          <img src="/lamp.jpg" height={300} />
+          <img src="/lamp.png" height={300} />
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

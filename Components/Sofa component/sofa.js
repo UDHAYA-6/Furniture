@@ -1,9 +1,13 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 const Sofa = () => {
   return (
-    <div
+    <motion.div
+      transition={{ duration: 1, type: "tween", bounce: 1 }}
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: false }}
       style={{
         display: "flex",
         flexDirection: "row",
@@ -14,7 +18,7 @@ const Sofa = () => {
         height: "fit-content",
       }}
     >
-      <img src="/sofa.png" />
+      <img src="/sofa.png" width={450} />
       <p
         style={{
           width: "600px",
@@ -30,7 +34,7 @@ const Sofa = () => {
         your home
         <FormatQuoteIcon />
       </p>
-    </div>
+    </motion.div>
   );
 };
 

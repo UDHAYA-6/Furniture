@@ -1,8 +1,12 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const Additional = () => {
   return (
-    <div
+    <motion.div
+      transition={{ duration: 1, type: "tween", bounce: 1 }}
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: false }}
       style={{
         display: "flex",
         flexDirection: "row",
@@ -10,7 +14,7 @@ const Additional = () => {
         alignItems: "center",
       }}
     >
-      <img src="vector.jpg" />
+      <img src="vector.png" />
       <div
         style={{
           width: "500px",
@@ -31,7 +35,7 @@ const Additional = () => {
         return and exchange policies to ensure your satisfaction with every
         purchase.
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,6 +1,6 @@
 .success_animation {
   margin: 150px auto;
-  position: absolute;
+  position: fixed;
   top: 30%;
   width: 300px;
   height: fit-content;

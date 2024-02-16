@@ -8,7 +8,7 @@ const cupSlice = createSlice({
         ordered: false,
         star: 2.5,
         name: "Classic Vanity Set",
-        price: 22429.99,
+        price: 22429,
         img: "/cupboard/cup1.jpg",
         description:
           "A timeless vanity set with a mirror and ample storage space.",
@@ -18,7 +18,7 @@ const cupSlice = createSlice({
         ordered: false,
         star: 2.0,
         name: "Modern Glass Dressing Table",
-        price: 22399.99,
+        price: 22399,
         img: "/cupboard/cup2.jpg",
         description:
           "Sleek and modern dressing table with a glass surface for a contemporary look.",
@@ -28,7 +28,7 @@ const cupSlice = createSlice({
         ordered: false,
         star: 4.0,
         name: "Vintage Oak Dresser",
-        price: 12199.99,
+        price: 12199,
         img: "/cupboard/cup3.jpg",
         description:
           "Charming vintage oak dresser with intricate details and a matching stool.",
@@ -38,7 +38,7 @@ const cupSlice = createSlice({
         ordered: false,
         star: 4.5,
         name: "Elegant White Makeup Table",
-        price: 23579.99,
+        price: 23579,
         img: "/cupboard/cup4.jpg",
         description:
           "Elegantly designed white makeup table with a spacious mirror and drawers.",
@@ -48,7 +48,7 @@ const cupSlice = createSlice({
         ordered: false,
         star: 3.0,
         name: "Compact Folding Vanity",
-        price: 44189.99,
+        price: 44189,
         img: "/cupboard/cup5.jpg",
         description:
           "Space-saving folding vanity ideal for small rooms or apartments.",
@@ -58,7 +58,7 @@ const cupSlice = createSlice({
         ordered: false,
         star: 4.5,
         name: " Mirrored Dressing Table",
-        price: 34329.99,
+        price: 34329,
         img: "/cupboard/cup6.jpg",
         description:
           "A stylish dressing table with mirror for a modern and glamorous touch.",

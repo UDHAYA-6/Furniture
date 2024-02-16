@@ -3,7 +3,7 @@ import classes from "./display.module.css";
 import * as React from "react";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-
+import { motion } from "framer-motion";
 function srcset(image, size, rows = 1, cols = 1) {
   return {
     src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
@@ -19,13 +19,18 @@ export default function QuiltedImageList() {
     router.replace(value);
   };
   return (
-    <>
+    <motion.div
+      transition={{ duration: 1, type: "tween", bounce: 1 }}
+      initial={{ opacity: 0, y: 200 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: false }}
+    >
       <center>
         <h1
           style={{
             borderBottom: "2px solid black",
             width: "fit-content",
-            padding: "0.5rem",
+            padding: "1rem",
           }}
         >
           India's largest furniture display
@@ -54,7 +59,7 @@ export default function QuiltedImageList() {
           </ImageListItem>
         ))}
       </ImageList>
-    </>
+    </motion.div>
   );
 }
 
