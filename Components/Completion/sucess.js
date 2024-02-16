@@ -22,7 +22,7 @@ const Success = () => {
             d="M14.1 27.2l7.1 7.2 16.7-16.8"
           />
         </svg>
-        <h2>Thanks fro your purchase</h2>
+        <h2>Thanks for your purchase</h2>
       </div>
     </center>
   );
